@@ -2,17 +2,21 @@ const gulp = require('gulp')
 const babel = require('gulp-babel')
 const sass = require('gulp-sass')
 const pug = require('gulp-pug')
+const plunger = require('gulp-plumber')
+
 const { init, stream, reload } = require('browser-sync')
 
 
 /* definition tasks */
 gulp.task('babel', ()=>{
     return gulp.src('./src/js/*.js') 
+            .pipe(plunger())
             .pipe(babel())
             .pipe(gulp.dest('./public/js'))
 })
 gulp.task('scss', ()=>{
     return gulp.src('./src/scss/style.scss')
+            .pipe(plunger())
             .pipe(sass({
                 outputStyle: 'compressed'
             }))
@@ -21,6 +25,7 @@ gulp.task('scss', ()=>{
 })
 gulp.task('pug', ()=>{
     return gulp.src('./src/views/index.pug')
+            .pipe(plunger())
             .pipe(pug())
             .pipe(gulp.dest('./public'))
 })
