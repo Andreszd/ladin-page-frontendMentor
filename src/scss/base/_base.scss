@@ -1,0 +1,11 @@
+@import './fonts';
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+    font-family:$principal-font;
+}
+img{
+    max-width: 100%;
+}

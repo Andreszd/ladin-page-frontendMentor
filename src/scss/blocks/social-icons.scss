@@ -1,0 +1,12 @@
+.social-icons{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    padding: 2rem 0;
+    justify-content: center;
+    &__img{
+        margin: 0 1rem;
+    }
+}
