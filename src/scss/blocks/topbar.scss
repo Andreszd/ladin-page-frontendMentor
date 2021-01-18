@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: 90% 10%;
     align-items: center;
-    z-index: 20;
+    z-index: 50;
     padding: 2rem ;
     &--show{
         filter: invert(1) brightness(100);

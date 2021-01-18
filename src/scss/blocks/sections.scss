@@ -1,3 +1,52 @@
 .section{
-
+    margin-top: 2rem;
+    position: relative;
+    padding: .5rem;
+    &__title,
+    &__text{
+        text-align: center;
+    }
+    &__title{
+        color: $Very-Dark-Blue;
+        font-weight: 400;
+    }
+    &__text{
+        padding: 0 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: $Grayish-Blue;
+        font-size: 16px;
+        margin-bottom: 2.3rem;
+    }
+    &__img{
+        display: block;
+        position: relative;
+        z-index: 20;
+    }
+    &--first{
+        &::before{
+            content:'';
+            position: absolute;
+            width: 150px;
+            top: 60px;
+            right:  0;
+            height: 200px;
+            z-index: 10;
+            background-color: $Soft-Blue;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: 60px;
+            right: 50px;
+            z-index: 10;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: $Soft-Blue;
+        }
+    }
+    &--thrid{
+        margin: 0 2rem;
+    }
 }

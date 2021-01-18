@@ -29,63 +29,55 @@ html(lang="en")
                     img(src="/assets/images/icon-twitter.svg", alt="").social-icons__img
         section.section.section--first
             .section__item
-                h1.article__title A Simple Bookmark Manager
-                p.article__text A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.
-                button.button Get it on Chrome
-                button.button Get it on Firefox
+                img(src='/assets/images/illustration-hero.svg' alt='').section__img
             .section__item
-                img(src='/assets/images/illustration-hero.svg' alt='')
+                h1.section__title A Simple Bookmark Manager
+                p.section__text A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.
+                .buttons
+                    button.button.button--purple Get it on Chrome
+                    button.button.button--white Get it on Firefox
+            
         section#features.section.section--second
             h2.section__title Features
             p.section__text
                 | Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.
-            ul.tabs
-                li.tabs__item
-                | Simple Bookmarking
-                .tabs-content
+            ul.tabs#tabs
+                li.tabs__item Simple Bookmarking
+                li.tabs__item Speedy Searching
+                li.tabs__item Easy Sharing
+                article.tabs-content
                     img(src='' alt='')
                     h2.tabs__title Bookmark in on click
-                    p.tabs__text
-                    | Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
-                    button.button More Info
-                li.tabs__item
-                | Speedy Searching
-                .tabs-content
+                    p.tabs__text Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
+                    button.button.button--purple More Info
+                article.tabs-content
                     img(src='' alt='')
                     h2.tabs__title Intelligent Search
-                    p.tabs__text
-                    | Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
-                    button.button More Info
-                li.tabs__item
-                | Easy Sharing
-                .tabs-content
+                    p.tabs__text Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
+                    button.button.button--purple More Info
+                article.tabs-content
                     img(src='' alt='')
                     h2.tabs__title Bookmark in on click
-                    p.tabs__text
-                    | Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
-                    button.button More Info
+                    p.tabs__text Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
+                    button.button.button--purple More Info
         section.section.section--thrid
             h2.section__title Download the Extension
-            p.section__text
-            | We&apos;ve got more in the pipeline. Please do let us know if you&apos;ve a favourite you&apos;d like us to prioritize.
+            p.section__text We&apos;ve got more in the pipeline. Please do let us know if you&apos;ve a favourite you&apos;d like us to prioritize.
             article.browser-card
-                img.browser-card__image
-                h2.browser-card__title
-                | Add to Chrome
+                img(src="/assets/images/logo-chrome.svg").browser-card__image
+                h2.browser-card__title Add to Chrome
                 p.browser-card__description Minimun version 62
-                button Add &amp; Install
+                button.button.button--purple Add &amp; Install extension
             article.browser-card
-                img.browser-card__image
-                h2.browser-card__title
-                | Add to Firefox
+                img(src="/assets/images/logo-firefox.svg").browser-card__image
+                h2.browser-card__title Add to Firefox
                 p.browser-card__description Minimun version 62
-                button Add &amp; Install
+                button.button.button--purple Add &amp; Install extension
             article.browser-card
-                img.browser-card__image
-                h2.browser-card__title
-                | Add to Opera
+                img(src="/assets/images/logo-opera.svg").browser-card__image
+                h2.browser-card__title Add to Opera
                 p.browser-card__description Minimun version 62
-                button Add &amp; Install
+                button.button.button--purple Add &amp; Install extension
         section.section.section--fourth
             h2.section__title Frequently Asked Questions
             p.section__text
