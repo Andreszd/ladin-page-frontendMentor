@@ -1,0 +1,40 @@
+.accordion{
+    margin-bottom: 2rem;
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $Grayish-Blue;
+        padding-bottom: .5rem;
+    }
+    &__title{
+        color: $Very-Dark-Blue;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    &__text{
+        color: $Grayish-Blue;
+        font-size: 1rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        line-height: 1.7;
+        margin-top: 2rem;
+    }
+    &__item{
+        height: 80px;
+        overflow: hidden;
+        transition: height ease-in-out .3s;
+        &--active{
+           height: 320px; 
+        }
+    }
+    &__image{
+        transform: rotate(0deg);
+        transition: transform linear .3s;
+        filter: hue-rotate(0);
+        &--active{
+            transform: rotate(180deg);
+            filter: hue-rotate(120deg);
+        }
+    }
+}
