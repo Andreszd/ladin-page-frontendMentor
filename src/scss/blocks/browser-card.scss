@@ -1,0 +1,24 @@
+.browser-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    box-shadow: 0 2px 10px $white-color-secundary;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 5px;
+    .button{
+        width: 100%;
+    }
+    &__title{
+        color: $Very-Dark-Blue;
+    }
+    &__text{
+
+    }
+    &__description{
+        color: $Grayish-Blue
+    }
+}

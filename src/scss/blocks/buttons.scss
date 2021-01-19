@@ -1,0 +1,21 @@
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1rem;
+}
+.button{
+    background: none;
+    border: none;
+    padding: 1.3rem .7rem;
+    border-radius: 7px;
+    font-weight: 500;
+    &--white{
+        color: $primary-color;
+        box-shadow: 3px 5px 10px $Grayish-Blue;
+    }
+    &--purple{
+        background-color: $Soft-Blue;
+        color: $white-color;
+    }
+}

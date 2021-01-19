@@ -1,0 +1,85 @@
+.tabs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    padding: 0 1rem;
+    margin-top:0;
+    margin-bottom: 0;
+    position: relative;
+    &__item{
+        padding: 1.5rem 0;
+        color:$Grayish-Blue;
+        width: 100%;
+        font-weight: 400;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        text-align: center;
+        border-top: 1px solid $Grayish-Blue;
+        position: relative;
+        transition: color linear .3s;
+        &--active::before{
+            position: absolute;
+            display: block;
+            content: '';
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 150px;
+            padding: 3px;
+            background-color: $Soft-Red;
+            border-radius: 3px;
+        }
+        &--active{
+            color: $primary-color;
+        }
+        &:last-of-type{
+            border-bottom: 1px solid $Grayish-Blue;
+        }
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        padding: 3rem 1rem;
+        position: absolute;
+        transform: translateX(-100vh);
+        transition: transform linear .5s;
+        visibility: hidden;
+        &--active{
+            position: relative; 
+            transform: translateX(0);
+            visibility: visible;
+        }
+        &::before{
+            content:'';
+            position: absolute;
+            bottom: 275px;
+            width: 320px;
+            left:  -10vw;
+            height: 200px;
+            z-index: -1;
+            border-bottom-right-radius:100px;
+            background-color: $Soft-Blue;
+        }
+    }
+    &__image{
+        padding-bottom: 2rem;
+    }
+    &__title,
+    &__text{
+        text-align: center;
+        font-weight: 400;
+    }
+    &__title{
+        color: $Very-Dark-Blue;
+        margin-bottom: 0;
+    }
+    &__text{
+        color: $Grayish-Blue;
+        font-size: 1rem;
+    }
+}
