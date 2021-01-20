@@ -104,22 +104,24 @@ html(lang="en")
                     p.accordion__text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, odit, obcaecati accusamus sed, quia voluptas vero nam perferendis mollitia placeat quae aperiam eveniet nemo! Tempora corrupti explicabo quod? Laborum, quisquam!
             button.button.button--purple More Info
         footer.footer
-            h3.footer__title
-            p.footer__text
+            h3.footer__title 35.000+ ALREADY JOINED
+            p.footer__subtitle Stay up-to-date with what were doing
             form.form
             ul.main-menu
-                input.form__input(type='email' placeholder='Enter yout mail')
-                button.button Contact us
-        nav.footer-nav.nav
+                input.form__input(type='email' placeholder='Enter yout mail').form__input--error
+                span.form__input-error Whoops, moke sure its an email 
+                button.button.button--red Contact us
+        nav.footer__menu
+            img(src='/assets/images/logo-bookmark.svg' alt='logo').footer__img
             ul.main-menu
-                li.main-menu__item
-                    a(href='#') Item
-                li.main-menu__item
-                    a(href='#') Item
-                li.main-menu__item
-                    a(href='#') Item
-            .socila-networks
-                a(href='') f1
-                a(href='') f2
+                li.main-menu__item.main-menu__item--border-none
+                    a(href='#').main-menu__link Features
+                li.main-menu__item.main-menu__item--border-none
+                    a(href='#').main-menu__link Pricing
+                li.main-menu__item.main-menu__item--border-none
+                    a(href='#').main-menu__link Contact
+            .social-icons
+                img(src="/assets/images/icon-facebook.svg", alt="").social-icons__img
+                img(src="/assets/images/icon-twitter.svg", alt="").social-icons__img
         script(src="/js/scripts-min.js")
         script(src="https://kit.fontawesome.com/6cb3650133.js" crossorigin="anonymous")

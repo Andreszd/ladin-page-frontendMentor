@@ -1,0 +1,36 @@
+.form{
+    position: relative;
+    &__input{
+        width: 100%;
+        padding: 1rem 1.4rem;
+        border-radius: 5px;
+        border: none;
+        &:invalid{
+            outline: 3px solid $Soft-Red;
+            background: #fff url('/assets/images/icon-error.svg') no-repeat;
+            background-position: 95%;
+            position: relative;
+        }
+        &-error{
+            display: block;
+            outline: 3px solid $Soft-Red;
+            visibility: hidden;
+            background-color: $Soft-Red;
+            width: 100%;
+            font-size: 1rem;
+            padding: 5px;
+            text-align: left;
+            margin-bottom: 1.5rem;
+        }
+        &:invalid + &-error{
+            visibility: visible;
+        }
+    }
+    /* &::after{
+        display: block;
+        position: absolute;
+        right: 1.4rem;
+        top: 1rem;
+        content: url('/assets/images/icon-error.svg');
+    } */
+}

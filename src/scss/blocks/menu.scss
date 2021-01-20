@@ -28,6 +28,9 @@
         &:last-child{
             margin-bottom: 2rem;
         }
+        &--border-none{
+            border-bottom: none;
+        }
     }
     &__link{
         color:$white-color;
